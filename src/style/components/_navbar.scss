@@ -1,0 +1,35 @@
+.nav{
+    margin: auto;
+    width: 50%;
+    background-color: #2f2f2f27;
+    margin-block: 2em;
+    padding: 1.2em;
+    border-radius: 6em;
+    display: flex;
+    justify-content: space-between;
+    button{
+        background-color: transparent;
+        font: 2em sans-serif;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        z-index: 10;
+
+    }
+}
+.menulist{
+    width: 40%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    background-color: $darkcolr;
+    padding: 1.2em;
+    transition: 0.4s;
+    span{
+        color: aliceblue;
+    }
+    &.active{
+        right: 0;
+    }
+}

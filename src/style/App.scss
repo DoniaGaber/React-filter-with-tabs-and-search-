@@ -1,0 +1,31 @@
+@import './varibles' ;
+@import './reset' ;
+@import './responsive' ;
+@import './components/postCard';
+@import './components/navbar' ;
+
+.box{
+    width: 0px;
+    height: 100px;
+    background-color: $darkcolr;
+    transition: all 0.5s ease-in-out  ;
+    &.isShow{
+        width: 300px;
+    }
+}
+.search_input{
+    width: 40%;
+    height: 3.5em;
+    border-radius: 2em;
+    overflow: hidden;
+    margin-bottom: 3em;
+    background-color: #2f2f2f27;
+    input{
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        padding-inline-start: 1.2em;
+        background-color: transparent;
+    }
+}
